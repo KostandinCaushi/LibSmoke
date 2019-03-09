@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+Documentation/Title\.synctex\.gz
+
+Documentation/Title\.pdf
+
+Documentation/Title\.log
+
+Documentation/Title\.aux
