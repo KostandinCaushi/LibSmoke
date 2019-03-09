@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/koci4/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /home/filippocollini/Downloads/CLion-2018.3.2/clion-2018.3.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/koci4/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /home/filippocollini/Downloads/CLion-2018.3.2/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx
+CMAKE_SOURCE_DIR = /home/filippocollini/AOS-Project/Project/sknx
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug
+CMAKE_BINARY_DIR = /home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmak
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/koci4/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/filippocollini/Downloads/CLion-2018.3.2/clion-2018.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/koci4/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/filippocollini/Downloads/CLion-2018.3.2/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles /cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles /home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named client2
+
+# Build rule for target.
+client2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client2
+.PHONY : client2
+
+# fast build rule for target.
+client2/fast:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/build
+.PHONY : client2/fast
 
 #=============================================================================
 # Target rules for targets named server
@@ -142,6 +155,7 @@ libs/polarssl/src/aes.o: libs/polarssl/src/aes.c.o
 
 # target to build an object file
 libs/polarssl/src/aes.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/aes.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/aes.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/aes.c.o
 .PHONY : libs/polarssl/src/aes.c.o
@@ -152,6 +166,7 @@ libs/polarssl/src/aes.i: libs/polarssl/src/aes.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/aes.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/aes.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/aes.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/aes.c.i
 .PHONY : libs/polarssl/src/aes.c.i
@@ -162,6 +177,7 @@ libs/polarssl/src/aes.s: libs/polarssl/src/aes.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/aes.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/aes.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/aes.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/aes.c.s
 .PHONY : libs/polarssl/src/aes.c.s
@@ -172,6 +188,7 @@ libs/polarssl/src/aesni.o: libs/polarssl/src/aesni.c.o
 
 # target to build an object file
 libs/polarssl/src/aesni.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/aesni.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/aesni.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/aesni.c.o
 .PHONY : libs/polarssl/src/aesni.c.o
@@ -182,6 +199,7 @@ libs/polarssl/src/aesni.i: libs/polarssl/src/aesni.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/aesni.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/aesni.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/aesni.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/aesni.c.i
 .PHONY : libs/polarssl/src/aesni.c.i
@@ -192,6 +210,7 @@ libs/polarssl/src/aesni.s: libs/polarssl/src/aesni.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/aesni.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/aesni.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/aesni.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/aesni.c.s
 .PHONY : libs/polarssl/src/aesni.c.s
@@ -202,6 +221,7 @@ libs/polarssl/src/bignum.o: libs/polarssl/src/bignum.c.o
 
 # target to build an object file
 libs/polarssl/src/bignum.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/bignum.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/bignum.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/bignum.c.o
 .PHONY : libs/polarssl/src/bignum.c.o
@@ -212,6 +232,7 @@ libs/polarssl/src/bignum.i: libs/polarssl/src/bignum.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/bignum.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/bignum.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/bignum.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/bignum.c.i
 .PHONY : libs/polarssl/src/bignum.c.i
@@ -222,6 +243,7 @@ libs/polarssl/src/bignum.s: libs/polarssl/src/bignum.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/bignum.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/bignum.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/bignum.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/bignum.c.s
 .PHONY : libs/polarssl/src/bignum.c.s
@@ -232,6 +254,7 @@ libs/polarssl/src/ctr_drbg.o: libs/polarssl/src/ctr_drbg.c.o
 
 # target to build an object file
 libs/polarssl/src/ctr_drbg.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/ctr_drbg.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/ctr_drbg.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/ctr_drbg.c.o
 .PHONY : libs/polarssl/src/ctr_drbg.c.o
@@ -242,6 +265,7 @@ libs/polarssl/src/ctr_drbg.i: libs/polarssl/src/ctr_drbg.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/ctr_drbg.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/ctr_drbg.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/ctr_drbg.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/ctr_drbg.c.i
 .PHONY : libs/polarssl/src/ctr_drbg.c.i
@@ -252,6 +276,7 @@ libs/polarssl/src/ctr_drbg.s: libs/polarssl/src/ctr_drbg.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/ctr_drbg.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/ctr_drbg.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/ctr_drbg.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/ctr_drbg.c.s
 .PHONY : libs/polarssl/src/ctr_drbg.c.s
@@ -262,6 +287,7 @@ libs/polarssl/src/ecp.o: libs/polarssl/src/ecp.c.o
 
 # target to build an object file
 libs/polarssl/src/ecp.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/ecp.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/ecp.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/ecp.c.o
 .PHONY : libs/polarssl/src/ecp.c.o
@@ -272,6 +298,7 @@ libs/polarssl/src/ecp.i: libs/polarssl/src/ecp.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/ecp.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/ecp.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/ecp.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/ecp.c.i
 .PHONY : libs/polarssl/src/ecp.c.i
@@ -282,6 +309,7 @@ libs/polarssl/src/ecp.s: libs/polarssl/src/ecp.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/ecp.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/ecp.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/ecp.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/ecp.c.s
 .PHONY : libs/polarssl/src/ecp.c.s
@@ -292,6 +320,7 @@ libs/polarssl/src/ecp_curves.o: libs/polarssl/src/ecp_curves.c.o
 
 # target to build an object file
 libs/polarssl/src/ecp_curves.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/ecp_curves.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/ecp_curves.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/ecp_curves.c.o
 .PHONY : libs/polarssl/src/ecp_curves.c.o
@@ -302,6 +331,7 @@ libs/polarssl/src/ecp_curves.i: libs/polarssl/src/ecp_curves.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/ecp_curves.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/ecp_curves.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/ecp_curves.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/ecp_curves.c.i
 .PHONY : libs/polarssl/src/ecp_curves.c.i
@@ -312,6 +342,7 @@ libs/polarssl/src/ecp_curves.s: libs/polarssl/src/ecp_curves.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/ecp_curves.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/ecp_curves.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/ecp_curves.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/ecp_curves.c.s
 .PHONY : libs/polarssl/src/ecp_curves.c.s
@@ -322,6 +353,7 @@ libs/polarssl/src/entropy.o: libs/polarssl/src/entropy.c.o
 
 # target to build an object file
 libs/polarssl/src/entropy.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/entropy.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/entropy.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/entropy.c.o
 .PHONY : libs/polarssl/src/entropy.c.o
@@ -332,6 +364,7 @@ libs/polarssl/src/entropy.i: libs/polarssl/src/entropy.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/entropy.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/entropy.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/entropy.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/entropy.c.i
 .PHONY : libs/polarssl/src/entropy.c.i
@@ -342,6 +375,7 @@ libs/polarssl/src/entropy.s: libs/polarssl/src/entropy.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/entropy.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/entropy.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/entropy.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/entropy.c.s
 .PHONY : libs/polarssl/src/entropy.c.s
@@ -352,6 +386,7 @@ libs/polarssl/src/entropy_poll.o: libs/polarssl/src/entropy_poll.c.o
 
 # target to build an object file
 libs/polarssl/src/entropy_poll.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/entropy_poll.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/entropy_poll.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/entropy_poll.c.o
 .PHONY : libs/polarssl/src/entropy_poll.c.o
@@ -362,6 +397,7 @@ libs/polarssl/src/entropy_poll.i: libs/polarssl/src/entropy_poll.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/entropy_poll.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/entropy_poll.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/entropy_poll.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/entropy_poll.c.i
 .PHONY : libs/polarssl/src/entropy_poll.c.i
@@ -372,6 +408,7 @@ libs/polarssl/src/entropy_poll.s: libs/polarssl/src/entropy_poll.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/entropy_poll.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/entropy_poll.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/entropy_poll.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/entropy_poll.c.s
 .PHONY : libs/polarssl/src/entropy_poll.c.s
@@ -382,6 +419,7 @@ libs/polarssl/src/miosix_poll.o: libs/polarssl/src/miosix_poll.cc.o
 
 # target to build an object file
 libs/polarssl/src/miosix_poll.cc.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/miosix_poll.cc.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/miosix_poll.cc.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/miosix_poll.cc.o
 .PHONY : libs/polarssl/src/miosix_poll.cc.o
@@ -392,6 +430,7 @@ libs/polarssl/src/miosix_poll.i: libs/polarssl/src/miosix_poll.cc.i
 
 # target to preprocess a source file
 libs/polarssl/src/miosix_poll.cc.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/miosix_poll.cc.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/miosix_poll.cc.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/miosix_poll.cc.i
 .PHONY : libs/polarssl/src/miosix_poll.cc.i
@@ -402,6 +441,7 @@ libs/polarssl/src/miosix_poll.s: libs/polarssl/src/miosix_poll.cc.s
 
 # target to generate assembly for a file
 libs/polarssl/src/miosix_poll.cc.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/miosix_poll.cc.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/miosix_poll.cc.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/miosix_poll.cc.s
 .PHONY : libs/polarssl/src/miosix_poll.cc.s
@@ -412,6 +452,7 @@ libs/polarssl/src/net.o: libs/polarssl/src/net.c.o
 
 # target to build an object file
 libs/polarssl/src/net.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/net.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/net.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/net.c.o
 .PHONY : libs/polarssl/src/net.c.o
@@ -422,6 +463,7 @@ libs/polarssl/src/net.i: libs/polarssl/src/net.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/net.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/net.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/net.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/net.c.i
 .PHONY : libs/polarssl/src/net.c.i
@@ -432,6 +474,7 @@ libs/polarssl/src/net.s: libs/polarssl/src/net.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/net.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/net.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/net.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/net.c.s
 .PHONY : libs/polarssl/src/net.c.s
@@ -442,6 +485,7 @@ libs/polarssl/src/platform.o: libs/polarssl/src/platform.c.o
 
 # target to build an object file
 libs/polarssl/src/platform.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/platform.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/platform.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/platform.c.o
 .PHONY : libs/polarssl/src/platform.c.o
@@ -452,6 +496,7 @@ libs/polarssl/src/platform.i: libs/polarssl/src/platform.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/platform.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/platform.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/platform.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/platform.c.i
 .PHONY : libs/polarssl/src/platform.c.i
@@ -462,6 +507,7 @@ libs/polarssl/src/platform.s: libs/polarssl/src/platform.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/platform.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/platform.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/platform.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/platform.c.s
 .PHONY : libs/polarssl/src/platform.c.s
@@ -472,6 +518,7 @@ libs/polarssl/src/sha512.o: libs/polarssl/src/sha512.c.o
 
 # target to build an object file
 libs/polarssl/src/sha512.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/sha512.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/sha512.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/sha512.c.o
 .PHONY : libs/polarssl/src/sha512.c.o
@@ -482,6 +529,7 @@ libs/polarssl/src/sha512.i: libs/polarssl/src/sha512.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/sha512.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/sha512.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/sha512.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/sha512.c.i
 .PHONY : libs/polarssl/src/sha512.c.i
@@ -492,6 +540,7 @@ libs/polarssl/src/sha512.s: libs/polarssl/src/sha512.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/sha512.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/sha512.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/sha512.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/sha512.c.s
 .PHONY : libs/polarssl/src/sha512.c.s
@@ -502,6 +551,7 @@ libs/polarssl/src/timing.o: libs/polarssl/src/timing.c.o
 
 # target to build an object file
 libs/polarssl/src/timing.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/timing.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/timing.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/timing.c.o
 .PHONY : libs/polarssl/src/timing.c.o
@@ -512,6 +562,7 @@ libs/polarssl/src/timing.i: libs/polarssl/src/timing.c.i
 
 # target to preprocess a source file
 libs/polarssl/src/timing.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/timing.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/timing.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/timing.c.i
 .PHONY : libs/polarssl/src/timing.c.i
@@ -522,6 +573,7 @@ libs/polarssl/src/timing.s: libs/polarssl/src/timing.c.s
 
 # target to generate assembly for a file
 libs/polarssl/src/timing.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/polarssl/src/timing.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/polarssl/src/timing.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/polarssl/src/timing.c.s
 .PHONY : libs/polarssl/src/timing.c.s
@@ -532,6 +584,7 @@ libs/sban/src/bd1.o: libs/sban/src/bd1.c.o
 
 # target to build an object file
 libs/sban/src/bd1.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/bd1.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/bd1.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/bd1.c.o
 .PHONY : libs/sban/src/bd1.c.o
@@ -542,6 +595,7 @@ libs/sban/src/bd1.i: libs/sban/src/bd1.c.i
 
 # target to preprocess a source file
 libs/sban/src/bd1.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/bd1.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/bd1.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/bd1.c.i
 .PHONY : libs/sban/src/bd1.c.i
@@ -552,6 +606,7 @@ libs/sban/src/bd1.s: libs/sban/src/bd1.c.s
 
 # target to generate assembly for a file
 libs/sban/src/bd1.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/bd1.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/bd1.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/bd1.c.s
 .PHONY : libs/sban/src/bd1.c.s
@@ -562,6 +617,7 @@ libs/sban/src/bd2.o: libs/sban/src/bd2.c.o
 
 # target to build an object file
 libs/sban/src/bd2.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/bd2.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/bd2.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/bd2.c.o
 .PHONY : libs/sban/src/bd2.c.o
@@ -572,6 +628,7 @@ libs/sban/src/bd2.i: libs/sban/src/bd2.c.i
 
 # target to preprocess a source file
 libs/sban/src/bd2.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/bd2.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/bd2.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/bd2.c.i
 .PHONY : libs/sban/src/bd2.c.i
@@ -582,6 +639,7 @@ libs/sban/src/bd2.s: libs/sban/src/bd2.c.s
 
 # target to generate assembly for a file
 libs/sban/src/bd2.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/bd2.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/bd2.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/bd2.c.s
 .PHONY : libs/sban/src/bd2.c.s
@@ -592,6 +650,7 @@ libs/sban/src/gdh2.o: libs/sban/src/gdh2.c.o
 
 # target to build an object file
 libs/sban/src/gdh2.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/gdh2.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/gdh2.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/gdh2.c.o
 .PHONY : libs/sban/src/gdh2.c.o
@@ -602,6 +661,7 @@ libs/sban/src/gdh2.i: libs/sban/src/gdh2.c.i
 
 # target to preprocess a source file
 libs/sban/src/gdh2.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/gdh2.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/gdh2.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/gdh2.c.i
 .PHONY : libs/sban/src/gdh2.c.i
@@ -612,6 +672,7 @@ libs/sban/src/gdh2.s: libs/sban/src/gdh2.c.s
 
 # target to generate assembly for a file
 libs/sban/src/gdh2.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/gdh2.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/gdh2.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/gdh2.c.s
 .PHONY : libs/sban/src/gdh2.c.s
@@ -622,6 +683,7 @@ libs/sban/src/mka.o: libs/sban/src/mka.c.o
 
 # target to build an object file
 libs/sban/src/mka.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/mka.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/mka.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/mka.c.o
 .PHONY : libs/sban/src/mka.c.o
@@ -632,6 +694,7 @@ libs/sban/src/mka.i: libs/sban/src/mka.c.i
 
 # target to preprocess a source file
 libs/sban/src/mka.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/mka.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/mka.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/mka.c.i
 .PHONY : libs/sban/src/mka.c.i
@@ -642,6 +705,7 @@ libs/sban/src/mka.s: libs/sban/src/mka.c.s
 
 # target to generate assembly for a file
 libs/sban/src/mka.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/mka.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/mka.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/mka.c.s
 .PHONY : libs/sban/src/mka.c.s
@@ -652,6 +716,7 @@ libs/sban/src/util.o: libs/sban/src/util.c.o
 
 # target to build an object file
 libs/sban/src/util.c.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/util.c.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/util.c.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/util.c.o
 .PHONY : libs/sban/src/util.c.o
@@ -662,6 +727,7 @@ libs/sban/src/util.i: libs/sban/src/util.c.i
 
 # target to preprocess a source file
 libs/sban/src/util.c.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/util.c.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/util.c.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/util.c.i
 .PHONY : libs/sban/src/util.c.i
@@ -672,6 +738,7 @@ libs/sban/src/util.s: libs/sban/src/util.c.s
 
 # target to generate assembly for a file
 libs/sban/src/util.c.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/libs/sban/src/util.c.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/libs/sban/src/util.c.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/libs/sban/src/util.c.s
 .PHONY : libs/sban/src/util.c.s
@@ -709,6 +776,7 @@ tests/x86/new/client.o: tests/x86/new/client.cc.o
 
 # target to build an object file
 tests/x86/new/client.cc.o:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/tests/x86/new/client.cc.o
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/tests/x86/new/client.cc.o
 .PHONY : tests/x86/new/client.cc.o
 
@@ -718,6 +786,7 @@ tests/x86/new/client.i: tests/x86/new/client.cc.i
 
 # target to preprocess a source file
 tests/x86/new/client.cc.i:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/tests/x86/new/client.cc.i
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/tests/x86/new/client.cc.i
 .PHONY : tests/x86/new/client.cc.i
 
@@ -727,6 +796,7 @@ tests/x86/new/client.s: tests/x86/new/client.cc.s
 
 # target to generate assembly for a file
 tests/x86/new/client.cc.s:
+	$(MAKE) -f CMakeFiles/client2.dir/build.make CMakeFiles/client2.dir/tests/x86/new/client.cc.s
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/tests/x86/new/client.cc.s
 .PHONY : tests/x86/new/client.cc.s
 
@@ -738,6 +808,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... client2"
 	@echo "... server"
 	@echo "... client"
 	@echo "... libs/polarssl/src/aes.o"

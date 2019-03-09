@@ -1,4 +1,5 @@
-/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/server.dir
-/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir
+/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client2.dir
+/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/server.dir
+/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir

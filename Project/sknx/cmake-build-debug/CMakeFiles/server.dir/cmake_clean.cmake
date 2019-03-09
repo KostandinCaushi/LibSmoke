@@ -19,8 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/libs/sban/src/util.c.o"
   "CMakeFiles/server.dir/tests/x86/new/bcast_server.cc.o"
   "server.pdb"
-  "server.exe"
-  "libserver.dll.a"
+  "server"
 )
 
 # Per-language clean rules from dependency scanning.

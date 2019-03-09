@@ -156,15 +156,15 @@ vector
 queue
 -
 
-/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/miosix_poll.cc
+/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/miosix_poll.cc
 polarssl/miosix_poll.h
-/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/polarssl/miosix_poll.h
+/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/polarssl/miosix_poll.h
 miosix.h
 -
 drivers/stm32_hardware_rng.h
 -
 
-/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new/bcast_server.cc
+/home/filippocollini/AOS-Project/Project/sknx/tests/x86/new/bcast_server.cc
 cstdio
 -
 queue
@@ -178,7 +178,7 @@ knx/common.h
 knx/backend/linux-tcp.h
 -
 common.h
-/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new/common.h
+/home/filippocollini/AOS-Project/Project/sknx/tests/x86/new/common.h
 
-/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new/common.h
+/home/filippocollini/AOS-Project/Project/sknx/tests/x86/new/common.h
 

@@ -5,23 +5,23 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/aes.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/aes.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/aesni.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/aesni.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/bignum.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/bignum.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/ctr_drbg.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/ctr_drbg.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/ecp.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/ecp.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/ecp_curves.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/ecp_curves.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/entropy.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/entropy.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/entropy_poll.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/entropy_poll.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/net.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/net.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/platform.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/platform.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/sha512.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/sha512.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/timing.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/timing.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/bd1.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/sban/src/bd1.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/bd2.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/sban/src/bd2.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/gdh2.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/sban/src/gdh2.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/mka.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/sban/src/mka.c.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/util.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/sban/src/util.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/aes.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/aes.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/aesni.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/aesni.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/bignum.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/bignum.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/ctr_drbg.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/ctr_drbg.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/ecp.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/ecp.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/ecp_curves.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/ecp_curves.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/entropy.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/entropy.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/entropy_poll.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/entropy_poll.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/net.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/net.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/platform.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/platform.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/sha512.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/sha512.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/timing.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/timing.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/sban/src/bd1.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/sban/src/bd1.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/sban/src/bd2.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/sban/src/bd2.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/sban/src/gdh2.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/sban/src/gdh2.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/sban/src/mka.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/sban/src/mka.c.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/sban/src/util.c" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/sban/src/util.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -72,8 +72,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../tests/x86/old"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/miosix_poll.cc" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/miosix_poll.cc.o"
-  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new/client.cc" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/client.dir/tests/x86/new/client.cc.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/libs/polarssl/src/miosix_poll.cc" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/libs/polarssl/src/miosix_poll.cc.o"
+  "/home/filippocollini/AOS-Project/Project/sknx/tests/x86/new/client.cc" "/home/filippocollini/AOS-Project/Project/sknx/cmake-build-debug/CMakeFiles/client.dir/tests/x86/new/client.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

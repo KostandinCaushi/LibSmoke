@@ -19,8 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/client.dir/libs/sban/src/util.c.o"
   "CMakeFiles/client.dir/tests/x86/new/client.cc.o"
   "client.pdb"
-  "client.exe"
-  "libclient.dll.a"
+  "client"
 )
 
 # Per-language clean rules from dependency scanning.

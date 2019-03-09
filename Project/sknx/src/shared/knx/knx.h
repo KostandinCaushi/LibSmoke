@@ -68,6 +68,10 @@ public:
 
     SKNXStatus status() const { return _status; }
 
+    void getKey(){
+        printf("%s\n", typeid(_key).name());
+    }
+
     /*
     virtual bool send(const uint8_t *data, size_t len) {
         return false; 

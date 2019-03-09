@@ -10,6 +10,7 @@
 #include <knx/nodecounter/dummy.h>
 #include <knx/pktwrapper.h>
 #include <knx/crypto/policies.h>
+#include <iostream>
 
 static volatile bool _stopevent = false;
 
@@ -24,7 +25,7 @@ void on_signal(int s) {
 int main()
 {
     KNX::LinuxTCP<TCP_PORT> tcp;
-    KNX::SKNX< KNX::MKAKeyExchange, KNX::DummyNodeCounter<7> > sknx(tcp, 7);
+    KNX::SKNX< KNX::MKAKeyExchange, KNX::DummyNodeCounter<2> > sknx(tcp, 2);
 
     if(!tcp.init()) {
         LOG("Cannot init TCP connection.");
@@ -54,6 +55,7 @@ int main()
         LOG("Key exchange completed.");
 
         // per stampare chiamare sknx.update()
+        sknx.getKey();
 
         // TODO : Retrieve Key e salvare in una variabile locale
 
