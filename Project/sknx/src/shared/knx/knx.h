@@ -68,8 +68,8 @@ public:
 
     SKNXStatus status() const { return _status; }
 
-    const uint8_t * getKey(){
-        return _key.key();
+    const KeyAlgorithm getKey(){
+        return _key;
     }
 
     /*

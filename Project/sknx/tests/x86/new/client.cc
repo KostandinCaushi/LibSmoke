@@ -55,7 +55,9 @@ int main()
         LOG("Key exchange completed.");
 
         // retrieve the calculated key
-        const uint8_t *_keyBuffer = sknx.getKey();
+        KNX::MKAKeyExchange _key = sknx.getKey();
+        // used to debug the key
+        Debug::printArray(_key.key(), _key.size());
 
         // TODO : manda messaggio cryptato
     }
