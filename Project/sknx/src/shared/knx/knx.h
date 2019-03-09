@@ -68,8 +68,8 @@ public:
 
     SKNXStatus status() const { return _status; }
 
-    void getKey(){
-        printf("%s\n", typeid(_key).name());
+    const uint8_t * getKey(){
+        return _key.key();
     }
 
     /*
