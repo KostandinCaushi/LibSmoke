@@ -54,10 +54,8 @@ int main()
     else if(sknx.status() == KNX::SKNX_ONLINE) {
         LOG("Key exchange completed.");
 
-        // per stampare chiamare sknx.update()
-        sknx.getKey();
-
-        // TODO : Retrieve Key e salvare in una variabile locale
+        // retrieve the calculated key
+        const uint8_t *_keyBuffer = sknx.getKey();
 
         // TODO : manda messaggio cryptato
     }
