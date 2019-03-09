@@ -11,6 +11,7 @@
 #include <knx/pktwrapper.h>
 #include <knx/crypto/policies.h>
 #include <iostream>
+#include <knx/telegram.h>
 
 static volatile bool _stopevent = false;
 
@@ -60,6 +61,19 @@ int main()
         Debug::printArray(_key.key(), _key.size());
 
         // TODO : manda messaggio cryptato
+        // Test to send msg broadcast
+        KNX::telegram pkt;
+        uint8_t event[8] = {'0','0','0','0','7','0','1','5'};
+        pkt.write(event, 8);
+        tcp.broadcast(pkt);
+
+        KNX::telegram pkt2;
+        while (1) {
+            if (tcp.read(pkt2)) {
+                tcp.read(pkt2);
+                Debug::printArray(pkt2.body(), 8);
+            }
+        }
     }
     ALLBENCHMARK_STOP(total_exchange_time);
 
