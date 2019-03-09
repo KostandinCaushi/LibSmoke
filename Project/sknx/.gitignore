@@ -1,0 +1,10 @@
+bin/*
+obj/*
+libs/*/bin/*
+libs/*/obj/*
+.*.sw?
+.sw?
+*.map
+*.bin
+*.elf
+*.o

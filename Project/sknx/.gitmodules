@@ -1,0 +1,3 @@
+[submodule "libs/miosix-kernel"]
+	path = libs/miosix-kernel
+    url = https://github.com/carpikes/miosix-kernel.git

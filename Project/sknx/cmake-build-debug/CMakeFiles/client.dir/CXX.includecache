@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libs/polarssl/include/polarssl/miosix_poll.h
+stddef.h
+-
+
+/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/miosix_poll.cc
+polarssl/miosix_poll.h
+/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/polarssl/miosix_poll.h
+miosix.h
+-
+drivers/stm32_hardware_rng.h
+-
+

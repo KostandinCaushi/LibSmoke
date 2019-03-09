@@ -1,0 +1,132 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/aes.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/aes.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/aesni.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/aesni.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/bignum.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/bignum.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/ctr_drbg.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/ctr_drbg.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/ecp.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/ecp.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/ecp_curves.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/ecp_curves.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/entropy.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/entropy.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/entropy_poll.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/entropy_poll.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/net.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/net.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/platform.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/platform.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/sha512.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/sha512.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/timing.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/timing.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/bd1.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/sban/src/bd1.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/bd2.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/sban/src/bd2.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/gdh2.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/sban/src/gdh2.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/mka.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/sban/src/mka.c.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/util.c" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/sban/src/util.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../config"
+  "../config/arch"
+  "../config/arch/arm7_lpc2000"
+  "../config/arch/arm7_lpc2000/lpc2138_miosix_board"
+  "../config/arch/cortexM3_efm32gg"
+  "../config/arch/cortexM3_efm32gg/efm32gg332f1024_wandstem"
+  "../config/arch/cortexM3_stm32"
+  "../config/arch/cortexM3_stm32/stm32f100cb_tempsensor"
+  "../config/arch/cortexM3_stm32/stm32f100rb_stm32vldiscovery"
+  "../config/arch/cortexM3_stm32/stm32f100rc_solertegiard"
+  "../config/arch/cortexM3_stm32/stm32f103cb_als_mainboard_rev2"
+  "../config/arch/cortexM3_stm32/stm32f103ve_mp3v2"
+  "../config/arch/cortexM3_stm32/stm32f103ve_strive_mini"
+  "../config/arch/cortexM3_stm32/stm32f103ze_redbull_v2"
+  "../config/arch/cortexM3_stm32/stm32f103ze_stm3210e-eval"
+  "../config/arch/cortexM3_stm32f2"
+  "../config/arch/cortexM3_stm32f2/stm32f205rc_skyward_stormtrooper"
+  "../config/arch/cortexM3_stm32f2/stm32f205rg_sony-newman"
+  "../config/arch/cortexM3_stm32f2/stm32f207ig_stm3220g-eval"
+  "../config/arch/cortexM3_stm32f2/stm32f207ze_als_camboard"
+  "../config/arch/cortexM3_stm32f2/stm32f207zg_EthBoardV2"
+  "../config/arch/cortexM3_stm32l1"
+  "../config/arch/cortexM3_stm32l1/stm32l151c8_als_mainboard"
+  "../config/arch/cortexM4_stm32f4"
+  "../config/arch/cortexM4_stm32f4/stm32f401vc_stm32f4discovery"
+  "../config/arch/cortexM4_stm32f4/stm32f407vg_bitsboard"
+  "../config/arch/cortexM4_stm32f4/stm32f407vg_stm32f4discovery"
+  "../config/arch/cortexM4_stm32f4/stm32f411re_nucleo"
+  "../config/arch/cortexM4_stm32f4/stm32f429zi_oledboard2"
+  "../config/arch/cortexM4_stm32f4/stm32f429zi_skyward_anakin"
+  "../config/arch/cortexM4_stm32f4/stm32f429zi_stm32f4discovery"
+  "../libs/polarssl/include"
+  "../libs/polarssl/include/polarssl"
+  "../libs/sban/include"
+  "../libs/sban/include/sban"
+  "../src"
+  "../src/shared"
+  "../src/shared/knx"
+  "../src/shared/knx/backend"
+  "../src/shared/knx/crypto"
+  "../src/shared/knx/nodecounter"
+  "../tests/x86/new"
+  "../tests/x86/old"
+  )
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/miosix_poll.cc" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/libs/polarssl/src/miosix_poll.cc.o"
+  "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new/bcast_server.cc" "/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/CMakeFiles/sknx.dir/tests/x86/new/bcast_server.cc.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../config"
+  "../config/arch"
+  "../config/arch/arm7_lpc2000"
+  "../config/arch/arm7_lpc2000/lpc2138_miosix_board"
+  "../config/arch/cortexM3_efm32gg"
+  "../config/arch/cortexM3_efm32gg/efm32gg332f1024_wandstem"
+  "../config/arch/cortexM3_stm32"
+  "../config/arch/cortexM3_stm32/stm32f100cb_tempsensor"
+  "../config/arch/cortexM3_stm32/stm32f100rb_stm32vldiscovery"
+  "../config/arch/cortexM3_stm32/stm32f100rc_solertegiard"
+  "../config/arch/cortexM3_stm32/stm32f103cb_als_mainboard_rev2"
+  "../config/arch/cortexM3_stm32/stm32f103ve_mp3v2"
+  "../config/arch/cortexM3_stm32/stm32f103ve_strive_mini"
+  "../config/arch/cortexM3_stm32/stm32f103ze_redbull_v2"
+  "../config/arch/cortexM3_stm32/stm32f103ze_stm3210e-eval"
+  "../config/arch/cortexM3_stm32f2"
+  "../config/arch/cortexM3_stm32f2/stm32f205rc_skyward_stormtrooper"
+  "../config/arch/cortexM3_stm32f2/stm32f205rg_sony-newman"
+  "../config/arch/cortexM3_stm32f2/stm32f207ig_stm3220g-eval"
+  "../config/arch/cortexM3_stm32f2/stm32f207ze_als_camboard"
+  "../config/arch/cortexM3_stm32f2/stm32f207zg_EthBoardV2"
+  "../config/arch/cortexM3_stm32l1"
+  "../config/arch/cortexM3_stm32l1/stm32l151c8_als_mainboard"
+  "../config/arch/cortexM4_stm32f4"
+  "../config/arch/cortexM4_stm32f4/stm32f401vc_stm32f4discovery"
+  "../config/arch/cortexM4_stm32f4/stm32f407vg_bitsboard"
+  "../config/arch/cortexM4_stm32f4/stm32f407vg_stm32f4discovery"
+  "../config/arch/cortexM4_stm32f4/stm32f411re_nucleo"
+  "../config/arch/cortexM4_stm32f4/stm32f429zi_oledboard2"
+  "../config/arch/cortexM4_stm32f4/stm32f429zi_skyward_anakin"
+  "../config/arch/cortexM4_stm32f4/stm32f429zi_stm32f4discovery"
+  "../libs/polarssl/include"
+  "../libs/polarssl/include/polarssl"
+  "../libs/sban/include"
+  "../libs/sban/include/sban"
+  "../src"
+  "../src/shared"
+  "../src/shared/knx"
+  "../src/shared/knx/backend"
+  "../src/shared/knx/crypto"
+  "../src/shared/knx/nodecounter"
+  "../tests/x86/new"
+  "../tests/x86/old"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

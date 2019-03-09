@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="sknx"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="server">
+				<Option output="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/server.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/arm7_lpc2000"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/arm7_lpc2000/lpc2138_miosix_board"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_efm32gg"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_efm32gg/efm32gg332f1024_wandstem"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100cb_tempsensor"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100rb_stm32vldiscovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100rc_solertegiard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103cb_als_mainboard_rev2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ve_mp3v2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ve_strive_mini"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ze_redbull_v2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ze_stm3210e-eval"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f205rc_skyward_stormtrooper"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f205rg_sony-newman"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207ig_stm3220g-eval"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207ze_als_camboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207zg_EthBoardV2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32l1"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32l1/stm32l151c8_als_mainboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f401vc_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f407vg_bitsboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f407vg_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f411re_nucleo"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_oledboard2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_skyward_anakin"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/backend"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/crypto"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/nodecounter"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/old"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="server/fast">
+				<Option output="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/server.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/arm7_lpc2000"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/arm7_lpc2000/lpc2138_miosix_board"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_efm32gg"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_efm32gg/efm32gg332f1024_wandstem"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100cb_tempsensor"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100rb_stm32vldiscovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100rc_solertegiard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103cb_als_mainboard_rev2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ve_mp3v2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ve_strive_mini"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ze_redbull_v2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ze_stm3210e-eval"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f205rc_skyward_stormtrooper"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f205rg_sony-newman"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207ig_stm3220g-eval"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207ze_als_camboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207zg_EthBoardV2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32l1"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32l1/stm32l151c8_als_mainboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f401vc_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f407vg_bitsboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f407vg_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f411re_nucleo"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_oledboard2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_skyward_anakin"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/backend"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/crypto"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/nodecounter"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/old"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="client">
+				<Option output="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/client.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/arm7_lpc2000"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/arm7_lpc2000/lpc2138_miosix_board"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_efm32gg"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_efm32gg/efm32gg332f1024_wandstem"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100cb_tempsensor"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100rb_stm32vldiscovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100rc_solertegiard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103cb_als_mainboard_rev2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ve_mp3v2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ve_strive_mini"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ze_redbull_v2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ze_stm3210e-eval"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f205rc_skyward_stormtrooper"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f205rg_sony-newman"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207ig_stm3220g-eval"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207ze_als_camboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207zg_EthBoardV2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32l1"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32l1/stm32l151c8_als_mainboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f401vc_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f407vg_bitsboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f407vg_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f411re_nucleo"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_oledboard2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_skyward_anakin"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/backend"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/crypto"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/nodecounter"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/old"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 client"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="client/fast">
+				<Option output="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/client.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/arm7_lpc2000"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/arm7_lpc2000/lpc2138_miosix_board"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_efm32gg"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_efm32gg/efm32gg332f1024_wandstem"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100cb_tempsensor"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100rb_stm32vldiscovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100rc_solertegiard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103cb_als_mainboard_rev2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ve_mp3v2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ve_strive_mini"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ze_redbull_v2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ze_stm3210e-eval"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f205rc_skyward_stormtrooper"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f205rg_sony-newman"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207ig_stm3220g-eval"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207ze_als_camboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207zg_EthBoardV2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32l1"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32l1/stm32l151c8_als_mainboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f401vc_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f407vg_bitsboard"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f407vg_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f411re_nucleo"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_oledboard2"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_skyward_anakin"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_stm32f4discovery"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/backend"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/crypto"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/nodecounter"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new"/>
+					<Add directory="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/old"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 client/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/arm7_lpc2000/lpc2138_miosix_board/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_efm32gg/efm32gg332f1024_wandstem/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100cb_tempsensor/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100rb_stm32vldiscovery/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f100rc_solertegiard/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103cb_als_mainboard_rev2/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ve_mp3v2/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ve_strive_mini/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ze_redbull_v2/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32/stm32f103ze_stm3210e-eval/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f205rc_skyward_stormtrooper/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f205rg_sony-newman/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207ig_stm3220g-eval/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207ze_als_camboard/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32f2/stm32f207zg_EthBoardV2/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM3_stm32l1/stm32l151c8_als_mainboard/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f401vc_stm32f4discovery/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f407vg_bitsboard/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f407vg_stm32f4discovery/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f411re_nucleo/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_oledboard2/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_skyward_anakin/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/arch/cortexM4_stm32f4/stm32f429zi_stm32f4discovery/board_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/config/miosix_settings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/aes.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/aesni.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/bignum.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/bn_mul.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/check_config.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/config.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/ctr_drbg.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/ecp.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/entropy.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/entropy_poll.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/miosix_poll.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/net.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/padlock.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/platform.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/sha512.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/include/polarssl/timing.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/aes.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/aesni.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/bignum.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/ctr_drbg.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/ecp.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/ecp_curves.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/entropy.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/entropy_poll.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/miosix_poll.cc">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/net.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/platform.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/sha512.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/polarssl/src/timing.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban/KnxTelegram.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban/KnxTpUart.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban/bd1.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban/bd2.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban/common.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban/gdh2.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban/mka.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/include/sban/util.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/bd1.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/bd2.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/gdh2.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/mka.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/libs/sban/src/util.c">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/backend/backend.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/backend/linux-tcp.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/common.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/config.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/crypto/crypto.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/crypto/dummy.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/crypto/mka.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/crypto/policies.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/debug.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/knx.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/multirings.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/nodecounter/counter.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/nodecounter/dummy.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/pktwrapper.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/ringbuffer.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/telegram.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/src/shared/knx/timing.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new/bcast_server.cc">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new/client.cc">
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/tests/x86/new/common.h">
+			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/koci4/Desktop/AOSProject/Material/sknx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
