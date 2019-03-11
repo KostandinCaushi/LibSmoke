@@ -64,14 +64,15 @@ int main()
         // Test to send msg broadcast
         KNX::telegram pkt;
         uint8_t event[8] = {'0','0','0','0','7','0','1','5'};
-        if(pkt.write(event, 8))
+        if(pkt.write(event, 8)) {
             printf("written");
-        tcp.broadcast(pkt);
+            tcp.broadcast(pkt);
+        }
 
         KNX::telegram pkt2;
         while (1) {
+            tcp.update();
             if (tcp.read(pkt2)) {
-                tcp.read(pkt2);
                 Debug::printArray(pkt2.body(), 8);
             }
         }
