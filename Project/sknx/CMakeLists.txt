@@ -38,6 +38,7 @@ include_directories(libs/polarssl/include)
 include_directories(libs/polarssl/include/polarssl)
 include_directories(libs/sban/include)
 include_directories(libs/sban/include/sban)
+include_directories(libs/tiny-AES-c-master)
 include_directories(src)
 include_directories(src/shared)
 include_directories(src/shared/knx)
@@ -201,6 +202,9 @@ add_executable(client
         libs/sban/src/gdh2.c
         libs/sban/src/mka.c
         libs/sban/src/util.c
+        libs/tiny-AES-c-master/aes.c
+        libs/tiny-AES-c-master/aes.h
+        libs/tiny-AES-c-master/aes.hpp
         src/shared/knx/backend/backend.h
         src/shared/knx/backend/linux-tcp.h
         src/shared/knx/crypto/crypto.h
@@ -288,6 +292,9 @@ add_executable(client2
         libs/sban/src/gdh2.c
         libs/sban/src/mka.c
         libs/sban/src/util.c
+        libs/tiny-AES-c-master/aes.c
+        libs/tiny-AES-c-master/aes.h
+        libs/tiny-AES-c-master/aes.hpp
         src/shared/knx/backend/backend.h
         src/shared/knx/backend/linux-tcp.h
         src/shared/knx/crypto/crypto.h
