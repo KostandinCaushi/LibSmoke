@@ -64,9 +64,20 @@ int main()
         // TODO : manda messaggio cryptato
         // Test to send msg broadcast
         KNX::telegram pkt;
-        uint8_t event[8] = {'0','0','0','0','7','0','1','5'};
-        if(pkt.write(event, 8)) {
-            printf("written");
+        uint8_t in[15]  = { 0x60, 0x1e, 0xc3, 0x13, 0x77, 0x57, 0x89, 0xa5, 0xb7, 0xa7, 0xf5, 0x04, 0xbb, 0xf3, 0xd2 };
+        uint8_t iv[16]  = { 0xf0, 0xf1, 0xf2, 0xf3, 0xf4, 0xf5, 0xf6, 0xf7, 0xf8, 0xf9, 0xfa, 0xfb, 0xfc, 0xfd, 0xfe, 0xff };
+        printf("Initial MSG\n");
+        Debug::printArray(in, 15);
+        // instatiated AES
+        struct AES_ctx ctx;
+        AES_init_ctx_iv(&ctx, _key.key(), iv);
+        AES_CTR_xcrypt_buffer(&ctx, in, 15);
+        printf("Encrypted MSG\n");
+        Debug::printArray(in, 15);
+
+        // Send pkt
+        if(pkt.write(in, 15)) {
+            printf("Written \n");
             tcp.broadcast(pkt);
         }
 
