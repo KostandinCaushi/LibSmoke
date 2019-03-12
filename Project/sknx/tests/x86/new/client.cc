@@ -85,7 +85,12 @@ int main()
         while (1) {
             tcp.update();
             if (tcp.read(pkt2)) {
-                Debug::printArray(pkt2.body(), 8);
+                printf("Recieved \n");
+                Debug::printArray(pkt2.body(), 15);
+                AES_init_ctx_iv(&ctx, _key.key(), iv);
+                AES_CTR_xcrypt_buffer(&ctx, pkt2.body(), 15);
+                printf("Decrypted \n");
+                Debug::printArray(pkt2.body(), 15);
             }
         }
     }
