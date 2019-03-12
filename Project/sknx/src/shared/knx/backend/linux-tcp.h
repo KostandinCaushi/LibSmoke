@@ -116,7 +116,7 @@ public:
 private:
 
     /** TCP Stream -> Array of KNX Telegrams */
-    void _process_packet(const uint8_t *buf, size_t len) {
+    void _process_packet(uint8_t *buf, size_t len) {
         if(len == 0) return; 
 
         _pktbuffer.write(buf, len);

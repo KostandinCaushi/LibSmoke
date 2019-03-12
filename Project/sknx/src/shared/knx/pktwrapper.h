@@ -95,7 +95,7 @@ private:
     std::queue<telegram> _out;
     std::queue<pkt_t> _in;
 
-    void _recompose(const telegram& pkt) {
+    void _recompose(telegram& pkt) {
         // Skip my own telegrams
         if(pkt.src() == sKConfig.id())
             return;

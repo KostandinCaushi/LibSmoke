@@ -71,7 +71,7 @@ public:
 
     /** Getters */
     const uint8_t *raw() const { return pkt.raw; }
-    const uint8_t *body() const { return pkt.body; }
+    uint8_t *body() { return pkt.body; }
     uint8_t ctrl() const { return pkt.hdr.ctrl; }
     uint16_t src() const { return fromBigEndian16(pkt.hdr.src); }
     uint16_t dest() const { return fromBigEndian16(pkt.hdr.dest); }

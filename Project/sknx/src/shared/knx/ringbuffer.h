@@ -15,7 +15,7 @@ class RingBuffer {
             delete[] buf; 
         }
 
-        bool write(const uint8_t *data, size_t len) {
+        bool write(uint8_t *data, size_t len) {
             if(plen + len > bufsize) {
                 LOG("Cannot write. Running out of memory!\n");
                 return false;
