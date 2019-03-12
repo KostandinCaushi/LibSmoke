@@ -12,6 +12,7 @@
 #include <knx/crypto/policies.h>
 #include <iostream>
 #include <knx/telegram.h>
+#include <aes.hpp>
 
 static volatile bool _stopevent = false;
 
