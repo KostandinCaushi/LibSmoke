@@ -76,23 +76,35 @@ int main()
         Debug::printArray(in, 15);
 
         // Send pkt
-        if(pkt.write(in, 15)) {
-            printf("Written \n");
-            tcp.broadcast(pkt);
+        bool sent = 0;
+
+        for (int (i) = 0; (i) < 5 ; ++(i)) {
+            while(sent!=1){
+                if(pkt.write(in, 15)) {
+                    printf("Written packet %d\n", (i+1));
+                    tcp.broadcast(pkt);
+                    sent = 1;
+                }
+
+            }
+
+            KNX::telegram pkt2;
+            while (sent==1) {
+                tcp.update();
+                if (tcp.read(pkt2)) {
+                    printf("Recieved packet %d\n", (i+1));
+                    sent = 0;
+                    Debug::printArray(pkt2.body(), 15);
+                    AES_init_ctx_iv(&ctx, _key.key(), iv);
+                    AES_CTR_xcrypt_buffer(&ctx, pkt2.body(), 15);
+                    printf("Decrypted \n");
+                    Debug::printArray(pkt2.body(), 15);
+                }
+            }
+
+            sleep(5);
         }
 
-        KNX::telegram pkt2;
-        while (1) {
-            tcp.update();
-            if (tcp.read(pkt2)) {
-                printf("Recieved \n");
-                Debug::printArray(pkt2.body(), 15);
-                AES_init_ctx_iv(&ctx, _key.key(), iv);
-                AES_CTR_xcrypt_buffer(&ctx, pkt2.body(), 15);
-                printf("Decrypted \n");
-                Debug::printArray(pkt2.body(), 15);
-            }
-        }
     }
     ALLBENCHMARK_STOP(total_exchange_time);
 
