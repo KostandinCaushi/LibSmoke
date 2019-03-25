@@ -1,9 +1,5 @@
-//
-// Created by filippocollini on 3/23/19.
-//
-
-#ifndef SKNX_CLIENT_SMOKE_H
-#define SKNX_CLIENT_SMOKE_H
+#ifndef LIBSMOKE_CLIENT_H
+#define LIBSMOKE_CLIENT_H
 
 #include "common.h"
 #include <signal.h>
@@ -42,4 +38,4 @@ private:
 
 };
 
-#endif //SKNX_CLIENT_SMOKE_H
+#endif //LIBSMOKE_CLIENT_H
