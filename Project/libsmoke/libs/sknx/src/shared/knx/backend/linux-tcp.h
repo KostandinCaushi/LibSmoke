@@ -20,7 +20,7 @@ namespace KNX {
 template<uint16_t PORT>
 class LinuxTCP : public Backend {
 public:
-    LinuxTCP(const char &addr, unsigned short &port) : Backend(), _pktbuffer(TCP_RINGBUFSIZE), _socket(0),
+    LinuxTCP(const char *addr, unsigned short &port) : Backend(), _pktbuffer(TCP_RINGBUFSIZE), _socket(0),
                  _remaining(0), in.sin_family(AF_INET), in.sin_port(htons(port)),
                 in.sin_addr.s_addr(inet_addr(addr)) { }
 
