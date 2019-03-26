@@ -26,17 +26,17 @@ class ServerSmoke{
 public:
 
     // TODO: comment
-    ServerSmoke() : _ready(false) {}
+    ServerSmoke() : _ready(false) {};
 
     // TODO: comment
-    bool init(const char *addr, unsigned short &port){}
+    bool init(const char *addr, unsigned short &port){};
     // TODO: comment
-    void run() {}
+    void run() {};
 
     // TODO: comment
-    ~ServerSmoke() {}
+    ~ServerSmoke() {};
     // TODO: comment
-    void shutdown() {}
+    void shutdown() {};
 
 private:
     // TODO: comment
