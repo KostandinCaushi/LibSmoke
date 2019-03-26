@@ -68,8 +68,11 @@ public:
 
     SKNXStatus status() const { return _status; }
 
-    const KeyAlgorithm getKey(){
-        return _key;
+    bool getKey(KeyAlgorithm &key){
+        if(_status != SKNX_ONLINE)
+            return false;
+        key = _key;
+        return true;
     }
 
     /*
