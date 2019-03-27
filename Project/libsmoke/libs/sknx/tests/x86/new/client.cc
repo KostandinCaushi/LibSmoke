@@ -26,7 +26,7 @@ void on_signal(int s) {
 
 int main()
 {
-    KNX::LinuxTCP<TCP_PORT> tcp;
+    KNX::LinuxTCP<TCP_PORT> tcp ("127.0.0.1");
     KNX::SKNX< KNX::MKAKeyExchange, KNX::DummyNodeCounter<2> > sknx(tcp, 2);
 
     if(!tcp.init()) {
@@ -57,7 +57,9 @@ int main()
         LOG("Key exchange completed.");
 
         // retrieve the calculated key
-        KNX::MKAKeyExchange _key = sknx.getKey();
+        KNX::PKTWrapper pckwrap (2, tcp);
+        KNX::MKAKeyExchange _key (pckwrap);
+        sknx.getKey(_key);
         // used to debug the key
         Debug::printArray(_key.key(), _key.size());
 
