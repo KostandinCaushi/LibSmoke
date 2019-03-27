@@ -67,3 +67,21 @@ namespace KNX {
             return false;
         }
     }
+
+//TODO: comment
+    template<typename KeyAlgorithm, uint16_t PORT>
+    void ClientSmoke<KeyAlgorithm, PORT>::send(KNX::telegram &data) {
+
+        printf("Sent MSG\n");
+        Debug::printArray(data.body(), 15);
+
+        // Encrypt MSG
+        AES_init_ctx_iv(&ctx, _key.key(), iv);
+        AES_CTR_xcrypt_buffer(&ctx, data.body(), 15);
+        printf("Encrypted MSG\n");
+        Debug::printArray(data.body(), 15);
+
+        // Send MSG
+        _backend.broadcast(data);
+    }
+}
