@@ -133,5 +133,13 @@ void ServerSmoke::run() {
 }
 
 
-    return 0;
+//TODO: comment
+void ServerSmoke::shutdown() {
+    _ready = false;
+    close(_sock);
+    for(Client* c : clients) {
+        close(c->sock);
+        delete c;
+    }
+    clients.clear();
 }
