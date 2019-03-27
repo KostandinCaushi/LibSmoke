@@ -111,6 +111,10 @@ public:
         return true;
     }
 
+    KNX::MKAKeyExchange& operator=( KNX::MKAKeyExchange&data) {
+        return data;
+    }
+
     const uint8_t * key() const { return _keyBuffer; }
     size_t size() const { return _keylen; }
 
