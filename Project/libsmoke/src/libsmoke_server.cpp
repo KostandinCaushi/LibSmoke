@@ -39,31 +39,99 @@ bool ServerSmoke::init(const char *addr, int port) {
 }
 
 
-#define ADDR "127.0.0.1"
-//defining #define PORT 123 unsigned int --> arises problems passing parameters in init
-//other problems if we try to use the TCP_PORT in common.h since it's declared as an int
+//TODO: comment
+void ServerSmoke::run() {
+    char buf[BUFSZ];
+    if(!_ready) return;
+    int max_id = _sock;
 
-using namespace std;
-TAG_DEF("Main")
+    FD_ZERO(&_rfds);
+    FD_SET(_sock, &_rfds);
 
-int main(){
-    ServerSmoke server;
-    unsigned short port = 123;
+    // Register all sockets
+    for(size_t i=0; i < clients.size(); i++) {
+        Client *c = clients[i];
+        if(c->sock == -1) {
+            c->mustDelete = true;
+            continue;
+        }
 
-    if(!server.init(ADDR, port)){
-        LOG("Cannot init TCP connection.");
-        exit(-1);
+        max_id = (max_id > c->sock) ? max_id : c->sock;
+        FD_SET(c->sock,  &_rfds);
     }
 
-    printf("[MAIN] Server is up and running\n");
-    while(!mustStop)
-        server.run();
 
-    printf("[MAIN] Shutting down...\n");
+    struct timeval tv;
+    tv.tv_sec = 0;
+    tv.tv_usec = 100000;
+    int n = select(max_id + 1, &_rfds, NULL, NULL, &tv);
 
-    server.shutdown();
+    if(n > 0) {
+        // Handle new connections
+        if(FD_ISSET(_sock, &_rfds)) {
+            Client *c = new Client();
 
-    printf("[MAIN] Goodbye!\n");
+            socklen_t len = sizeof(c->in);
+            c->sock = accept(_sock, (struct sockaddr *) &(c->in), &len);
+
+            if(c->sock < 0) {
+                fprintf(stderr,
+                        "[ERROR] Cannot accept a new connection\n");
+                delete c;
+            }
+
+            printf("[NEWCONN] Say welcome to %s:%d\n",
+                   inet_ntoa(c->in.sin_addr), c->in.sin_port);
+
+            clients.push_back(c);
+        }
+
+        for(size_t i = 0; i < clients.size(); i++) {
+            Client *c = clients[i];
+            if(c->mustDelete) continue;
+            if(FD_ISSET(c->sock, &_rfds)) {
+                int m = recv(c->sock, buf, BUFSZ, 0);
+
+                // Connection closed. Delete the socket
+                if(m <= 0) {
+                    c->mustDelete = true;
+                } else if(m > 0) {
+                    printf("[MSGPUSH] Broadcasting data from %s:%d\n",
+                           inet_ntoa(c->in.sin_addr), c->in.sin_port);
+                    vector<uint8_t> temp(buf, buf+m);
+                    pktQueue.push(temp);
+                }
+            }
+        }
+
+        // Broadcast messages
+        while(!pktQueue.empty()) {
+            vector<uint8_t> &data = pktQueue.front();
+            for(size_t i = 0; i < clients.size(); i++) {
+                Client *c = clients[i];
+                if(c->mustDelete) continue; // Only active clients
+
+                if(send(c->sock, (const char *) &data[0],
+                        data.size(), 0) < (ssize_t)data.size())
+                    c->mustDelete = true;
+            }
+            pktQueue.pop();
+        }
+
+        // Remove disconnected clients
+        for(size_t i = 0; i < clients.size(); i++) {
+            Client *c = clients[i];
+            if(c->mustDelete) {
+                printf("[DISCONN] Say goodbye to %s:%d\n",
+                       inet_ntoa(c->in.sin_addr), c->in.sin_port);
+                if(c->sock > 0) close(c->sock);
+                clients.erase(clients.begin() + i--);
+                delete c;
+            }
+        }
+    }
+}
+
 
     return 0;
 }
