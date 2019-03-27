@@ -4,7 +4,9 @@
 #include <cstdio>
 #include <queue>
 #include <vector>
-#include <linux-tcp.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
 
 using std::vector;
 using std::queue;

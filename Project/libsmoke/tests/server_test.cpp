@@ -1,4 +1,6 @@
 #include <libsmoke_server.h>
+#include <shared/knx/debug.h>
+#include <cstdlib>
 
 #include "connection_data.h"
 
@@ -13,6 +15,7 @@ int main() //int argc, char *argv[])
         exit(-1);
     }
 
+    server.banner();
     printf("[MAIN] Server is up and running\n");
     while(!mustStop) {
         server.run();

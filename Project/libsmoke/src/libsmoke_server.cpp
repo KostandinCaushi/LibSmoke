@@ -1,4 +1,5 @@
 #include <libsmoke_server.h>
+#include <unistd.h>
 
 #define BUFSZ 512
 
