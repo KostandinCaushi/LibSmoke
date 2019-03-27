@@ -49,8 +49,7 @@ include_directories(libs/sknx/src/shared/knx/nodecounter)
 include_directories(libs/sknx/tests/x86/new)
 include_directories(libs/tiny-AES-c-master)
 
-add_executable(libsmoke
-        include/libsmoke/libsmoke_client.h
+add_executable(server
         include/libsmoke/libsmoke_server.h
         libs/sknx/config/arch/arm7_lpc2000/lpc2138_miosix_board/board_settings.h
         libs/sknx/config/arch/cortexM3_efm32gg/efm32gg332f1024_wandstem/board_settings.h
@@ -144,12 +143,9 @@ add_executable(libsmoke
         libs/sknx/src/shared/knx/ringbuffer.h
         libs/sknx/src/shared/knx/telegram.h
         libs/sknx/src/shared/knx/timing.h
-        libs/sknx/tests/x86/new/bcast_server.cc
-        libs/sknx/tests/x86/new/client.cc
-        libs/sknx/tests/x86/new/common.h
-        libs/sknx/tests/x86/new/uart-client.cc
         libs/tiny-AES-c-master/aes.c
         libs/tiny-AES-c-master/aes.h
         libs/tiny-AES-c-master/aes.hpp
-        libs/tiny-AES-c-master/test.c
-        libs/tiny-AES-c-master/test.cpp src/libsmoke_server.cpp src/libsmoke_client.cpp)
+        src/libsmoke_server.cpp
+        tests/server_test.cpp
+        tests/connection_data.h)
