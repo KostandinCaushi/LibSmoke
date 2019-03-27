@@ -4,11 +4,7 @@
 #include <cstdio>
 #include <queue>
 #include <vector>
-#include <linux-tcp.h>
 
-
-#define VERSION "0.01"
-#define BUFSZ 512
 
 // TODO: comment
 static volatile bool mustStop = false;
@@ -29,14 +25,28 @@ public:
     ServerSmoke() : _ready(false) {};
 
     // TODO: comment
-    bool init(const char *addr, unsigned short &port){};
+    bool init(const char *addr, unsigned short &port);
     // TODO: comment
-    void run() {};
+    void run();
 
     // TODO: comment
-    ~ServerSmoke() {};
+    ~ServerSmoke() { shutdown(); };
     // TODO: comment
-    void shutdown() {};
+    void shutdown();
+
+    //TODO: comment
+    void banner() {
+        printf(
+                " ********************************************************************************\n"
+                " * $$\       $$\ $$\        $$$$$$\                          $$\                 \n"
+                " * $$ |      \__|$$ |      $$  __$$\                         $$ |                \n"
+                " * $$ |      $$\ $$$$$$$\  $$ /  \__|$$$$$$\$$$$\   $$$$$$\  $$ |  $$\  $$$$$$\  \n"
+                " * $$ |      $$ |$$  __$$\ \$$$$$$\  $$  _$$  _$$\ $$  __$$\ $$ | $$  |$$  __$$\ \n"
+                " * $$ |      $$ |$$ |  $$ | \____$$\ $$ / $$ / $$ |$$ /  $$ |$$$$$$  / $$$$$$$$ |\n"
+                " * $$ |      $$ |$$ |  $$ |$$\   $$ |$$ | $$ | $$ |$$ |  $$ |$$  _$$<  $$   ____|\n"
+                " * $$$$$$$$\ $$ |$$$$$$$  |\$$$$$$  |$$ | $$ | $$ |\$$$$$$  |$$ | \$$\ \$$$$$$$\ \n"
+                " * \________|\__|\_______/  \______/ \__| \__| \__| \______/ \__|  \__| \_______|\n\n");
+    }
 
 private:
     // TODO: comment
