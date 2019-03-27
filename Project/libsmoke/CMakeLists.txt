@@ -152,4 +152,4 @@ add_executable(libsmoke
         libs/tiny-AES-c-master/aes.h
         libs/tiny-AES-c-master/aes.hpp
         libs/tiny-AES-c-master/test.c
-        libs/tiny-AES-c-master/test.cpp src/libsmoke_server.cpp)
+        libs/tiny-AES-c-master/test.cpp src/libsmoke_server.cpp src/libsmoke_client.cpp)
