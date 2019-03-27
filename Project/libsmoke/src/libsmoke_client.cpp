@@ -48,3 +48,22 @@ namespace KNX {
         }
     }
 
+//TODO: comment
+    template<typename KeyAlgorithm, uint16_t PORT>
+    bool ClientSmoke<KeyAlgorithm, PORT>::receive(KNX::telegram &data) {
+
+        _backend.update();
+        if (_backend.read(data)) {
+            printf("Received packet\n");
+            Debug::printArray(data.body(), 15);
+
+            // Decrypt MSG
+            AES_init_ctx_iv(&ctx, _key.key(), iv);
+            AES_CTR_xcrypt_buffer(&ctx, data.body(), 15);
+            printf("Decrypted \n");
+            Debug::printArray(data.body(), 15);
+            return true;
+        } else {
+            return false;
+        }
+    }
