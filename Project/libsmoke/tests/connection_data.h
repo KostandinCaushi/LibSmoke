@@ -4,4 +4,6 @@
 #define TCP_PORT 45067
 #define TCP_IP "127.0.0.1"
 
+#define CLIENTS_NUM 2
+
 #endif //LIBSMOKE_CONNECTION_DATA_H
