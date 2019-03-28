@@ -1,7 +1,4 @@
 #include <libsmoke_client.h>
-#include <shared/knx/debug.h>
-#include <cstdlib>
-#include <shared/knx/crypto/mka.h>
 
 #include "connection_data.h"
 
@@ -9,9 +6,9 @@ TAG_DEF("Main")
 
 int main() //int argc, char *argv[])
 {
-    KNX::ClientSmoke<KNX::MKAKeyExchange, TCP_PORT> client;
+    ClientSmoke<KNX::MKAKeyExchange, TCP_PORT> client(CLIENTS_NUM, TCP_IP);
 
-    if(!client.init(2, TCP_IP)) {
+    if(!client.init()) {
         printf("Cannot init TCP connection.");
         exit(-1);
     }
