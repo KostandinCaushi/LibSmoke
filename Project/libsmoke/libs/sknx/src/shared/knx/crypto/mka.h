@@ -2,6 +2,7 @@
 #define KNX_CRYPTO_MKA_H
 
 #include "crypto.h"
+#include <string.h>
 
 extern "C" {
 #include <sban/mka.h>
@@ -111,8 +112,9 @@ public:
         return true;
     }
 
-    KNX::MKAKeyExchange& operator=( KNX::MKAKeyExchange&data) {
-        return data;
+    void operator=(const KNX::MKAKeyExchange &data) {
+        _keylen = data.size();
+        memcpy(_keyBuffer, data.key(), data.size());
     }
 
     const uint8_t * key() const { return _keyBuffer; }
