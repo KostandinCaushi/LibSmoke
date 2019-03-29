@@ -1,4 +1,4 @@
-#include <libsmoke_client.h>
+#include "../src/libsmoke_client.h"
 
 #include "connection_data.h"
 

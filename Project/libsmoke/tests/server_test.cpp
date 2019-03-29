@@ -1,4 +1,4 @@
-#include <libsmoke_server.h>
+#include "../src/libsmoke_server.h"
 #include <shared/knx/debug.h>
 #include <cstdlib>
 
