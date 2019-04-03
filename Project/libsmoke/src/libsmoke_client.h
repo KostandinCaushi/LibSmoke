@@ -91,16 +91,17 @@ public:
     void send(uint16_t dest, uint8_t cmd, uint8_t *buf,
               uint16_t len) {
         printf("\nSent MSG\n");
-        Debug::printArray(data.body(), 15);
+        Debug::printArray(buf, len);
 
         // Encrypt MSG
         AES_init_ctx_iv(&_ctx, _key.key(), iv);
-        AES_CTR_xcrypt_buffer(&_ctx, data.body(), 15);
+        AES_CTR_xcrypt_buffer(&_ctx, buf, len);
         printf("\nEncrypted MSG\n");
-        Debug::printArray(data.body(), 15);
+        Debug::printArray(buf, len);
 
         // Send MSG
-        _backend.broadcast(data);
+        _pktwrapper.write(dest, cmd, buf, len);
+        _pktwrapper.update();
     }
 
 private:
