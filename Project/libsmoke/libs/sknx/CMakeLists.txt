@@ -27,6 +27,6 @@ add_library(SknxLib
         libs/sban/src/mka.c
         libs/sban/src/util.c)
 
-add_executable(client2
-        config/arch/arm7_lpc2000/lpc2138_miosix_board/board_settings.h
-        config/arch/cortexM3_efm32gg/efm32gg332f1024_wandstem/board_settings.h
+target_include_directories(SknxLib PUBLIC
+        libs
+        src/shared)
