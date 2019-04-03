@@ -88,7 +88,8 @@ public:
 
 
     //TODO: comment
-    void send(KNX::telegram &data) {
+    void send(uint16_t dest, uint8_t cmd, uint8_t *buf,
+              uint16_t len) {
         printf("\nSent MSG\n");
         Debug::printArray(data.body(), 15);
 
