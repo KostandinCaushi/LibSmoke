@@ -17,18 +17,18 @@ static const uint8_t iv[16]  = { 0xc0, 0xa1, 0x62, 0xb3, 0x84, 0x25, 0xe6,
 
 
 //TODO: comment
-template<typename KeyAlgorithm, uint16_t PORT>
+template<typename KeyAlgorithm, uint16_t PORT, size_t numClients>
 class ClientSmoke {
 public:
 
-    ClientSmoke(int numClients, const char *addr) :
+    ClientSmoke(const char *addr) :
             _backend(addr), _pktwrapper(numClients, _backend),
             _key(_pktwrapper) {}
 
 
     //TODO: comment
     bool init() {
-        KNX::SKNX<KeyAlgorithm, KNX::DummyNodeCounter<2> > sknx(_backend, 2);
+        KNX::SKNX<KeyAlgorithm, KNX::DummyNodeCounter<numClients>> sknx(_backend, numClients);
 
         if (!_backend.init()) {
             printf("Cannot init TCP connection.");
