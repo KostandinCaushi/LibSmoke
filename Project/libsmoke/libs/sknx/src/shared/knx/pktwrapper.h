@@ -23,6 +23,11 @@ struct pkt_t {
     uint16_t src;
     uint16_t dest;
     std::vector<uint8_t> data;
+
+    // method to get data
+    std::vector<uint8_t> getData () {
+        return data;
+    }
 };
 
 class PKTWrapper {
