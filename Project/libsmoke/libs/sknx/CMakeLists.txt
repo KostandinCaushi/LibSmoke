@@ -3,8 +3,8 @@ project(sknx)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(config)
-include_directories(config/arch)
+include_directories(libs
+        src/shared)
 include_directories(config/arch/arm7_lpc2000)
 include_directories(config/arch/arm7_lpc2000/lpc2138_miosix_board)
 include_directories(config/arch/cortexM3_efm32gg)
