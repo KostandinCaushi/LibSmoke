@@ -18,3 +18,9 @@ add_executable(client1
 
 add_executable(client2
         tests/client_test.cpp)
+
+target_link_libraries(server SknxLib)
+target_link_libraries(client1 SknxLib)
+target_link_libraries(client1 tiny-aes)
+target_link_libraries(client2 SknxLib)
+target_link_libraries(client2 tiny-aes)
