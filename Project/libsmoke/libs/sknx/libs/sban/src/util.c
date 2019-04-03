@@ -1,4 +1,4 @@
-#include <sban/util.h>
+#include <sban/include/sban/util.h>
 
 /* Taken from https://tls.mbed.org/discussions/generic/compute-inverse-of-ecp */
 int ecp_opp(const ecp_group *grp, ecp_point *R, const ecp_point *P)

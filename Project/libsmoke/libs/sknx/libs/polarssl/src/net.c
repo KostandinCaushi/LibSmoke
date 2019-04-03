@@ -24,14 +24,14 @@
  */
 
 #if !defined(POLARSSL_CONFIG_FILE)
-#include "polarssl/config.h"
+#include "polarssl/include/polarssl/config.h"
 #else
 #include POLARSSL_CONFIG_FILE
 #endif
 
 #if defined(POLARSSL_NET_C)
 
-#include "polarssl/net.h"
+#include "polarssl/include/polarssl/net.h"
 
 #if (defined(_WIN32) || defined(_WIN32_WCE)) && !defined(EFIX64) && \
     !defined(EFI32)

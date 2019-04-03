@@ -1,5 +1,5 @@
 #include "../src/libsmoke_server.h"
-#include <shared/knx/debug.h>
+#include <sknx/src/shared/knx/debug.h>
 #include <cstdlib>
 
 #include "connection_data.h"

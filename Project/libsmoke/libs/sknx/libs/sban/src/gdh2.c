@@ -1,4 +1,4 @@
-# include <sban/gdh2.h>
+# include <sban/include/sban/gdh2.h>
 
 int gdh2_init(gdh2_context *ctx,ecp_group_id id,int N,void *p_rng)
 {

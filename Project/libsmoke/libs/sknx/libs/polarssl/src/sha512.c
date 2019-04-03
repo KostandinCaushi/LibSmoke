@@ -29,21 +29,21 @@
  */
 
 #if !defined(POLARSSL_CONFIG_FILE)
-#include "polarssl/config.h"
+#include "polarssl/include/polarssl/config.h"
 #else
 #include POLARSSL_CONFIG_FILE
 #endif
 
 #if defined(POLARSSL_SHA512_C)
 
-#include "polarssl/sha512.h"
+#include "polarssl/include/polarssl/sha512.h"
 
 #if defined(POLARSSL_FS_IO) || defined(POLARSSL_SELF_TEST)
 #include <stdio.h>
 #endif
 
 #if defined(POLARSSL_PLATFORM_C)
-#include "polarssl/platform.h"
+#include "polarssl/include/polarssl/platform.h"
 #else
 #define polarssl_printf printf
 #endif

@@ -11,9 +11,9 @@
 #include <ctime>
 
 extern "C" {
-#include <polarssl/ctr_drbg.h>
-#include <polarssl/entropy.h>
-#include <sban/common.h>
+#include "../../../libs/polarssl/include/polarssl/ctr_drbg.h"
+#include "../../../libs/polarssl/include/polarssl/entropy.h"
+#include "../../../libs/sban/include/sban/common.h"
 }
 
 #define _DEBUG

@@ -24,15 +24,15 @@
  */
 
 #if !defined(POLARSSL_CONFIG_FILE)
-#include "polarssl/config.h"
+#include "polarssl/include/polarssl/config.h"
 #else
 #include POLARSSL_CONFIG_FILE
 #endif
 
 #if defined(POLARSSL_ENTROPY_C)
 
-#include "polarssl/entropy.h"
-#include "polarssl/entropy_poll.h"
+#include "polarssl/include/polarssl/entropy.h"
+#include "polarssl/include/polarssl/entropy_poll.h"
 #ifdef _MIOSIX
 #include "polarssl/miosix_poll.h"
 #endif

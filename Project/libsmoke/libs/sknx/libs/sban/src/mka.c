@@ -1,4 +1,4 @@
-# include <sban/mka.h>
+# include <sban/include/sban/mka.h>
 
 int mka_init(mka_context *ctx,ecp_group_id id)
 {

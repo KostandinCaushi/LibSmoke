@@ -45,17 +45,17 @@
  */
 
 #if !defined(POLARSSL_CONFIG_FILE)
-#include "polarssl/config.h"
+#include "polarssl/include/polarssl/config.h"
 #else
 #include POLARSSL_CONFIG_FILE
 #endif
 
 #if defined(POLARSSL_ECP_C)
 
-#include "polarssl/ecp.h"
+#include "polarssl/include/polarssl/ecp.h"
 
 #if defined(POLARSSL_PLATFORM_C)
-#include "polarssl/platform.h"
+#include "polarssl/include/polarssl/platform.h"
 #else
 #define polarssl_printf     printf
 #define polarssl_malloc     malloc

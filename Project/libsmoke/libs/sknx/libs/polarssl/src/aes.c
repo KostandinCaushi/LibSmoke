@@ -30,14 +30,14 @@
  */
 
 #if !defined(POLARSSL_CONFIG_FILE)
-#include "polarssl/config.h"
+#include "polarssl/include/polarssl/config.h"
 #else
 #include POLARSSL_CONFIG_FILE
 #endif
 
 #if defined(POLARSSL_AES_C)
 
-#include "polarssl/aes.h"
+#include "polarssl/include/polarssl/aes.h"
 #if defined(POLARSSL_PADLOCK_C)
 #include "polarssl/padlock.h"
 #endif
@@ -46,7 +46,7 @@
 #endif
 
 #if defined(POLARSSL_PLATFORM_C)
-#include "polarssl/platform.h"
+#include "polarssl/include/polarssl/platform.h"
 #else
 #define polarssl_printf printf
 #endif

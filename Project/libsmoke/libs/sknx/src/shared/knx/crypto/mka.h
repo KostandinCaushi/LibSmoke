@@ -5,7 +5,7 @@
 #include <string.h>
 
 extern "C" {
-#include <sban/mka.h>
+#include "../../../../libs/sban/include/sban/mka.h"
 }
 
 #define MKA_BUFSIZE 66

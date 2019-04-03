@@ -1,4 +1,4 @@
-#include <sban/bd1.h>
+#include <sban/include/sban/bd1.h>
 
 int bd1_init(bd1_context *ctx, ecp_group_id id) 
 {

@@ -1,4 +1,4 @@
-#include "polarssl/miosix_poll.h"
+#include "polarssl/include/polarssl/miosix_poll.h"
 
 #ifdef _MIOSIX 
 

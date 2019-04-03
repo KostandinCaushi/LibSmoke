@@ -24,14 +24,14 @@
  */
 
 #if !defined(POLARSSL_CONFIG_FILE)
-#include "polarssl/config.h"
+#include "polarssl/include/polarssl/config.h"
 #else
 #include POLARSSL_CONFIG_FILE
 #endif
 
 #if defined(POLARSSL_ECP_C)
 
-#include "polarssl/ecp.h"
+#include "polarssl/include/polarssl/ecp.h"
 
 #if defined(_MSC_VER) && !defined(inline)
 #define inline _inline

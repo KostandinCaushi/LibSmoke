@@ -1,14 +1,14 @@
 #ifndef LIBSMOKE_CLIENT_H
 #define LIBSMOKE_CLIENT_H
 
-#include <aes.hpp>
-#include <knx/knx.h>
-#include <shared/knx/backend/linux-tcp.h>
-#include <shared/knx/nodecounter/dummy.h>
-#include <knx/crypto/mka.h>
-#include <knx/pktwrapper.h>
-#include <knx/backend/backend.h>
-#include <shared/knx/debug.h>
+#include <tiny-AES-c-master/aes.hpp>
+#include <sknx/src/shared/knx/knx.h>
+#include <sknx/src/shared/knx/backend/linux-tcp.h>
+#include <sknx/src/shared/knx/nodecounter/dummy.h>
+#include <sknx/src/shared/knx/crypto/mka.h>
+#include <sknx/src/shared/knx/pktwrapper.h>
+#include <sknx/src/shared/knx/backend/backend.h>
+#include <sknx/src/shared/knx/debug.h>
 
 
 static volatile bool _stopevent = false;

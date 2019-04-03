@@ -24,13 +24,13 @@
  */
 
 #if !defined(POLARSSL_CONFIG_FILE)
-#include "polarssl/config.h"
+#include "polarssl/include/polarssl/config.h"
 #else
 #include POLARSSL_CONFIG_FILE
 #endif
 
 #if defined(POLARSSL_SELF_TEST) && defined(POLARSSL_PLATFORM_C)
-#include "polarssl/platform.h"
+#include "polarssl/include/polarssl/platform.h"
 #else
 #include <stdio.h>
 #define polarssl_printf     printf
@@ -38,7 +38,7 @@
 
 #if defined(POLARSSL_TIMING_C) && !defined(POLARSSL_TIMING_ALT)
 
-#include "polarssl/timing.h"
+#include "polarssl/include/polarssl/timing.h"
 
 #if defined(_WIN32) && !defined(EFIX64) && !defined(EFI32)
 
@@ -333,7 +333,7 @@ void m_sleep( int milliseconds )
 
 /* To test net_usleep against our functions */
 #if defined(POLARSSL_NET_C)
-#include "polarssl/net.h"
+#include "polarssl/include/polarssl/net.h"
 #endif
 
 /*

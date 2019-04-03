@@ -24,18 +24,18 @@
  */
 
 #if !defined(POLARSSL_CONFIG_FILE)
-#include "polarssl/config.h"
+#include "polarssl/include/polarssl/config.h"
 #else
 #include POLARSSL_CONFIG_FILE
 #endif
 
 #if defined(POLARSSL_ENTROPY_C)
 
-#include "polarssl/entropy.h"
-#include "polarssl/entropy_poll.h"
+#include "polarssl/include/polarssl/entropy.h"
+#include "polarssl/include/polarssl/entropy_poll.h"
 
 #if defined(POLARSSL_TIMING_C)
-#include "polarssl/timing.h"
+#include "polarssl/include/polarssl/timing.h"
 #endif
 #if defined(POLARSSL_HAVEGE_C)
 #include "polarssl/havege.h"
