@@ -11,7 +11,7 @@ enum NodeCounterOpcodes {
     CMD_NODECOUNTER_THATSME = 0x10,
 };
 
-template<size_t N>
+template<uint8_t N>
 class DummyNodeCounter : public NodeCounter {
 public:
     DummyNodeCounter(PKTWrapper& pkt) : NodeCounter(), _pkts(pkt), _cnt(0),
