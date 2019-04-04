@@ -13,9 +13,13 @@
 using std::vector;
 using std::queue;
 
-// TODO: comment
+/**
+ * Used in case of errors to stop the server.
+ */
 static volatile bool mustStop = false;
-
+/**
+ * Used to save all connected Clients.
+ */
 struct Client {
     int sock;
     struct sockaddr_in in;
@@ -24,18 +28,33 @@ struct Client {
     Client() : sock(0), mustDelete(false) {}
 };
 
+/**
+ * Class of Libsmoke Server.
+ */
 class ServerSmoke{
 public:
 
-    // TODO: comment
+    /**
+     * Constructor of Libsmoke Server.
+     * Sets _ready to false in order to say that the server is not yet initialized.
+     */
     ServerSmoke() : _ready(false) {}
 
 
-    // TODO: comment
+    /**
+     * Checks if the server is already initialized.
+     * If not creates the socket with the given IP and PORT.
+     *
+     * @param addr - IP addr of the socket to create.
+     * @param port - PORT of the socket to create.
+     * @return TRUE - if socket is created with no errore and is listening.
+     *          FALSE - otherwise.
+     */
     bool init(const char *addr, int port) {
         if(_ready)
             return false;
 
+        // Set socket parameters
         struct sockaddr_in in;
         in.sin_family = AF_INET;
         in.sin_port = htons(port);
@@ -62,12 +81,17 @@ public:
             return false;
         }
 
+        // Socket ready and listening
         _ready = true;
+        banner();
         return true;
     }
 
 
-    // TODO: comment
+    /**
+     * Handles connections : registering the new ones or deleting the closed ones.
+     * Also used to broadcast messages to all connected clients.
+     */
     void run() {
         char buf[BUFSZ];
         if(!_ready) return;
@@ -161,13 +185,19 @@ public:
     }
 
 
-    // TODO: comment
+    /**
+     * Destructor of Libsmoke Client.
+     * It just calls the shutdown() method.
+     */
     ~ServerSmoke() {
         shutdown();
     }
 
 
-    // TODO: comment
+    /**
+     * Used to close all sockets and clear the vector of the registered clients.
+     * Sets also _ready to false, so the server can be initialized again.
+     */
     void shutdown() {
         _ready = false;
         close(_sock);
@@ -179,7 +209,10 @@ public:
     }
 
 
-    //TODO: comment
+    /**
+     * Banner displayed when the server initialization is completed
+     * and it's waiting for clients to connect.
+     */
     void banner() {
         printf(
                 " ********************************************************************************\n"
@@ -194,10 +227,25 @@ public:
     }
 
 private:
+    /**
+     * Used to save the pkts that has to be broadcasted.
+     */
     queue<vector<uint8_t>> pktQueue;
+    /**
+     * Used to save the connected clients.
+     */
     vector<Client *> clients;
+    /**
+     * Used to save the listening socket of the server.
+     */
     int _sock;
+    /**
+     * Used to check if the server is already initialized or not.
+     */
     bool _ready;
+    /**
+     * Selection Function used for socket.
+     */
     fd_set _rfds;
 };
 

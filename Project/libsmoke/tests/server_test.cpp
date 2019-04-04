@@ -15,7 +15,6 @@ int main() //int argc, char *argv[])
         exit(-1);
     }
 
-    server.banner();
     printf("[MAIN] Server is up and running\n");
     while(!mustStop) {
         server.run();
