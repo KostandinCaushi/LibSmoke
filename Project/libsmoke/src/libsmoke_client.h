@@ -42,8 +42,8 @@ public:
      * Initializes _backend and sknx.
      * When sknx is ONLINE retrieves the KeyAlgorithm.
      *
-     * \return     TRUE - if the all initializations are completed succesfully and key is retrieved.
-     *             FALSE - if there's an error on initializations or key retrieving.
+     * \return     TRUE - if all initializations are completed successfully and key is retrieved.
+     *             FALSE - if there's an error on initialization or key retrieving.
      */
     bool init() {
         // Instantiate SKNX
