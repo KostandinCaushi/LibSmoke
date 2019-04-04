@@ -43,12 +43,12 @@ public:
 
     /**
      * Checks if the server is already initialized.
-     * If not creates the socket with the given IP and PORT.
+     * If not, creates the socket with the given IP and PORT.
      *
      * @param addr - IP addr of the socket to create.
      * @param port - PORT of the socket to create.
-     * @return TRUE - if socket is created with no errore and is listening.
-     *          FALSE - otherwise.
+     * @return TRUE - if socket is created with no errors and is listening.
+     *         FALSE - otherwise.
      */
     bool init(const char *addr, int port) {
         if(_ready)
@@ -186,7 +186,7 @@ public:
 
 
     /**
-     * Destructor of Libsmoke Client.
+     * Destructor of Libsmoke Server.
      * It just calls the shutdown() method.
      */
     ~ServerSmoke() {
