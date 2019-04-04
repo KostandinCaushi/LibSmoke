@@ -144,9 +144,21 @@ public:
     }
 
 private:
+    /**
+     * Used in order to send and receive pkts.
+     */
     KNX::PKTWrapper _pktwrapper;
+    /**
+     * Used to save locally the shared key.
+     */
     KeyAlgorithm _key;
+    /**
+     * Used to save locally the LinuxTCP backend connection used to communicate.
+     */
     KNX::LinuxTCP<PORT> _backend;
+    /**
+     * Used to save locally an instance of AES.
+     */
     struct AES_ctx _ctx;
 };
 
