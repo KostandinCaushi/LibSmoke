@@ -8,7 +8,7 @@ It integrates together 2 libraries :
 ## Design & Implementation
 LibSmoke is divide in 2 parts : ClientSmoke and ServerSmoke.
 ### ServerSmoke
-It's main features are to instatiate socket connection and broadcast the received pkts from the clients.
+It's main features are to instantiate socket connections and broadcast the received pkts from the clients.
 ```C
 class ServerSmoke{
 public:
@@ -43,7 +43,7 @@ public:
     ~ServerSmoke();
 ```
 ### ClientSmoke
-It's main features are to instatiate socket connection and broadcast the received pkts from the clients.
+It's main features are to send and receive encrypted pkts.
 ```C
 /**
  * Class of Libsmoke Client.
