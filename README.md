@@ -5,8 +5,17 @@ It integrates together 2 libraries :
 * [AES](https://github.com/kokke/tiny-AES-c), in particular AES256_CTR, used to encrypt and decrypt pkts data;
 * SKNX (Securing KNX), used to exchange pkts between different devices and to generate a shared key.
 
+## Instructions to Use
+In this repo you can find the full paper of LibSmoke, "LibSmoke Documentation", and the "Project" folder. Inside it there is the "libsmoke" directory, download and add it to your project.
+
+The available API are shown underneath and in order to use them you need to :
+* ClientSmoke : `#include "libsmoke_client.h"`
+* ServerSmoke : `#include "libsmoke_server.h"`
+
+NB : in the repository is available also a `tests` directory, where inside can find `client_test` and `server_test`, that show how to use the library.
+
 ## Design & Implementation
-LibSmoke is divide in 2 parts : ClientSmoke and ServerSmoke.
+LibSmoke is divide in 2 parts : ServerSmoke and ClientSmoke.
 ### ServerSmoke
 It's main features are to instantiate socket connections and broadcast the received pkts from the clients.
 ```C
@@ -95,9 +104,3 @@ public:
               uint16_t len);
 ```
 NB : the user can choose the KeyExchange Algorithm from the ones already implemented and available inside the SKNX library.
-
-## Instructions to Use
-+ To use ClientSmoke add `#include "libsmoke_client.h"`
-* To use ServerSmoke add `#include "libsmoke_server.h"`
-
-NB : in the repository is available also a `tests` directory, where inside can find `client_test` and `server_test`, that show how to use the library.
